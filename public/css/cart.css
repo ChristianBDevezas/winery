@@ -1,0 +1,130 @@
+#cart-icon {
+    color: var(--cor-vinho-verde);
+    transform: scale(1.05);
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart__title {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+.cart__description {
+    display: flex;
+    align-items: center;
+}
+
+.cart__description__image {
+    margin-right: 3rem;
+}
+
+.cart__description__image img {
+    height: 270px;
+    width: 70px;
+}
+
+.cart__description__text h2 {
+    margin-bottom: 1.8rem;
+}
+
+.cart__subtitle {
+    font-size: 1.8rem;
+}
+
+.cart__buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.cart__buttons button,
+.cart__buttons span {
+    cursor: pointer;
+}
+
+.cart__buttons button {
+    padding: .35rem .5rem;
+    transform: scale(.7);
+    background: none;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.cart__buttons__subtract,
+.cart__buttons__add {
+    color: var(--cor-vinho-verde);
+}
+
+.cart__buttons__quantity {
+    margin: 0 1rem;
+    font-size: 2rem;
+}
+
+.cart__buttons__remove {
+    margin-left: 2rem;
+    padding: .45rem .75rem !important;
+    color: var(--cor-vinho-escuro);
+}
+
+.cart__resume {
+    margin: 2rem 0;    
+}
+
+.cart__resume button {
+    padding: .7rem;
+    border: 1px solid var(--cor-preta);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 550;    
+}
+
+.cart__resume__back {
+    margin-right: 1rem;
+    background-color: var(--cor-rosa);
+    transition: all .5s;
+}
+.cart__resume__back:hover {
+    color: var(--cor-branca);
+}
+
+.cart__resume__final {
+    background-color: var(--cor-vinho-verde);
+    transition: all .5s;
+}
+.cart__resume__final:hover {
+    color: var(--cor-branca);
+}
+
+/**Media Queries**/
+@media(max-width: 350px) {
+    .cart__description__image {
+        margin-right: 1.3rem;
+    }
+
+    .cart__resume {
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart__resume__back {
+        margin: 0rem 0 1rem 0rem;
+    }
+}
+
+/*Cart2*/
+.footer__top__map img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid var(--cor-dourada);
+}
