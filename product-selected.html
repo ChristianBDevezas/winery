@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja Whine House</title>
+    <title>Whine House</title>
     <!--Favicon-->
     <link rel="icon" type="image/png" sizes="96x96" href="public/img/favicon.png">
 
@@ -45,7 +45,13 @@
             <div class="hamburger__line"></div>
         </div>
 
-        <!--Login/Compras-->
+        <!--User Name-->
+        <div class="user">
+            <h2 id="user-name"></h2>
+            <button class="user__exit">Sair</button>
+        </div>
+
+        <!--Login/Shopping-->
         <div class="icons">
             <a href="login.html">
                 <i class="fa-solid fa-user" id="user-icon" title="Login"></i>
@@ -91,6 +97,9 @@
 
             <a href="cart.html" class="product__btn cart">Adicionar ao carrinho</a>
         </section>
+
+        <!--Button Promotion-->
+        <button id="promo-btn">Promoções</button>
 
         <!--Link to Top-->
         <a class="link-top" href="#product"><i class="fas fa-arrow-up"></i></a>
@@ -148,6 +157,15 @@
     <!--end FOOTER-->
 
     <!--JAVASCRIPT-->
+    <!--CDN Toastify-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.js" integrity="sha512-MnKz2SbnWiXJ/e0lSfSzjaz9JjJXQNb2iykcZkEY2WOzgJIWVqJBFIIPidlCjak0iTH2bt2u1fHQ4pvKvBYy6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--User Name-->
+    <script src="public/js/user-state.js"></script>
+    
+    <!--Product Selected-->
+    <script src="public/js/product-selected.js"></script>
+
     <!--Main-->
     <script src="public/js/main.js"></script>
     <!--end JAVASCRIPT-->

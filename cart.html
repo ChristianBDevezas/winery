@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja Whine House</title>
+    <title>Whine House</title>
     <!--Favicon-->
     <link rel="icon" type="image/png" sizes="96x96" href="public/img/favicon.png">
 
@@ -45,7 +45,13 @@
             <div class="hamburger__line"></div>
         </div>
 
-        <!--Login/Compras-->
+         <!--User Name-->
+         <div class="user">
+            <h2 id="user-name"></h2>
+            <button class="user__exit">Sair</button>
+        </div>
+
+        <!--Login//Shopping-->
         <div class="icons">
             <a href="login.html">
                 <i class="fa-solid fa-user" id="user-icon" title="Login"></i>
@@ -109,6 +115,7 @@
                 <!-- <button class="cart__resume__back" onclick="window.location.href='/product-selected.html'">
                     Voltar para produtos
                 </button> -->
+
                 <a href="product-selected.html">
                     <button class="cart__resume__back">Voltar para o produto</button>
                 </a>                
@@ -173,12 +180,15 @@
     </footer>
     <!--end FOOTER-->
 
-    <!--JAVASCRIPT-->
-    <!--Main-->
-    <script src="public/js/main.js"></script>
+   <!--JAVASCRIPT-->
+    <!--User Name-->
+    <script src="public/js/user-state.js"></script>
 
     <!--Shop-->
     <script src="public/js/shop.js"></script>
+
+    <!--Main-->
+    <script src="public/js/main.js"></script>
     <!--end JAVASCRIPT-->
 </body>
 </html>
