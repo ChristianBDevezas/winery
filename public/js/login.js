@@ -3,18 +3,18 @@ const userExit = document.querySelector(".user__exit");
 const form = document.querySelector(".login__form");
 const inputEmail = document.getElementById('e-mail');
 const inputPassword = document.getElementById('password');
-let userSate;
+let userState;
 
 userName.innerText = `Olá, ${localStorage.getItem('Email')}!`;
 console.log(localStorage.getItem('Email') == null);
 
 // Confere se nome do usuário está no LocalStorage
-if(localStorage.getItem('Email') !== null && userSate !== false) {
+if(localStorage.getItem('Email') !== null && userState !== false) {
   userName.innerText = `Olá, ${localStorage.getItem('Email')}!`;
   userExit.style.display = 'block';
 }
 else {
-  userName.innerText = `Olá, usuário!`;
+  userName.innerText = `Seja bem-vindo!`;
   userExit.style.display = 'none';
 }
 
@@ -30,8 +30,8 @@ const getUserName = () => {
 }
 
 // Verifica status de usuário
-const checkState = (userSate) => {  
-  if(userSate == true) {
+const checkState = (userState) => {  
+  if(userState == true) {
     userName.innerText = `Olá, ${localStorage.getItem('Email')}!`;
     userExit.style.display = 'block';
   }
@@ -79,12 +79,12 @@ form.addEventListener("submit", (e) => {
     //Confere se o e-mail é válido e se o campo de senha possui o mínimo de 6 caracteres
     if(regExp.test(inputEmail.value.trim())) {    
       if(inputPassword.value.length > 5) {
-        userSate = true;
-        localStorage.setItem('UserState', userSate);
+        userState = true;
+        localStorage.setItem('UserState', userState);
         
         getUserName();
         clearInputFields();
-        checkState(userSate);
+        checkState(userState);
 
         // garante que o nome de usuário e botão "sair" sejam mostrados após o usuário fazer novo login
         userName.style.display = 'block';
@@ -113,8 +113,8 @@ form.addEventListener("submit", (e) => {
 });
 
 userExit.addEventListener("click", () => {
-  userSate = false;
-  // localStorage.setItem('UserState', userSate);
-  checkState(userSate);
+  userState = false;
+  // localStorage.setItem('UserState', userState);
+  checkState(userState);
   localStorage.clear();
 });
